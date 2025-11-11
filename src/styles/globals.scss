@@ -1,0 +1,21 @@
+@use '../styles/var' as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font_one;
+  overflow-x: hidden;
+}
+
+
+img {
+  width: auto;
+  height: auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}

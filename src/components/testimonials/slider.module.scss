@@ -1,0 +1,83 @@
+@import '../../styles/common';
+@import '../../styles/var';
+
+.testimonials {
+    padding: 70px 0;
+
+    @media(max-width:$xl) {
+        padding: 60px 0;
+    }
+
+    @media(max-width:$lg) {
+        padding: 50px 0;
+    }
+
+    @media(max-width:$md) {
+        padding: 40px 0;
+    }
+
+    @media(max-width:$sm) {
+        padding: 30px 0;
+    }
+
+    :global(.swiper) {
+        padding: 20px;
+        padding-bottom: 40px;
+
+        .swiper-pagination {
+            bottom: 0;
+
+            .swiper-pagination-bullet-active {
+                background: $primary;
+            }
+        }
+    }
+
+    .card {
+        background: $color_six;
+        border-radius: 1rem;
+        padding: 33px;
+        text-align: left;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        h3 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 0.8rem;
+        object-fit: cover;
+    }
+
+    .review {
+        font-size: 0.95rem;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+
+    .rating {
+        font-size: 1.2rem;
+        color: #f5c518; // yellow stars
+    }
+}
