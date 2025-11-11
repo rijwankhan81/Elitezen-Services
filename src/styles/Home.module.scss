@@ -421,6 +421,10 @@
                 gap: 10px;
 
                 @media(max-width:$md) {
+                    align-items: center;
+                }
+
+                @media(max-width:$sm) {
                     align-items: start;
                 }
 
