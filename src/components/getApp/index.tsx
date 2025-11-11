@@ -1,5 +1,5 @@
-import { Container } from "react-bootstrap";
 import styles from "./getApp.module.scss";
+import { Container } from "react-bootstrap";
 import NextImage from "@/hooks/NextImage";
 
 export default function Getapp() {
