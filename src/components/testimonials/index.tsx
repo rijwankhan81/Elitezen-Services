@@ -8,8 +8,6 @@ import "swiper/css/pagination";
 
 import styles from "./slider.module.scss";
 import { Container } from "react-bootstrap";
-import { FaComment } from "react-icons/fa";
-import useLanguage from "@/hooks/useLanguage";
 
 interface Testimonial {
   id: number;
