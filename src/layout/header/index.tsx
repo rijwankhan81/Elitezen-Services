@@ -21,7 +21,7 @@ export default function Header() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Bangladesh's next-generation digital payment gateway — fast, secure, and built for everyone. Send money, pay bills, shop online, and grow your business — all in one app"
+          content="Bangladesh's next-generation digital payment gateway"
         />
         <link rel="icon" href="/images/fav.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
