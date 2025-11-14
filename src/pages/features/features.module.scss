@@ -91,6 +91,10 @@
                 border-radius: 30px;
                 width: fit-content;
                 padding: 10px 20px;
+
+                @media(max-width:$md) {
+                    margin: auto;
+                }
             }
 
         }
@@ -506,13 +510,8 @@
                 padding: 20px;
                 border-radius: 12px;
 
-                @media(max-width:$md) {
-                    align-items: center;
-                }
 
-                @media(max-width:$sm) {
-                    align-items: start;
-                }
+
 
                 li {
                     display: flex;

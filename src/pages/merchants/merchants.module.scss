@@ -53,6 +53,13 @@
                     background: linear-gradient(90deg, $primary, $color_three);
                     padding: 20px;
                     border-radius: 15px;
+                    text-align: left;
+                    width: max-content;
+
+                    @media(max-width:$sm) {
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
 
                     h5 {
                         display: flex;
@@ -163,6 +170,10 @@
                 display: flex;
                 padding-top: 20px;
                 gap: 30px;
+
+                @media(max-width:$md) {
+                    justify-content: center;
+                }
 
                 .img {
                     display: flex;
