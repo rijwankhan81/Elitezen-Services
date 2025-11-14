@@ -68,7 +68,7 @@ export default function Home() {
               <p>Everything you need for seamless digital payments</p>
             </div>
             <div className={styles.row}>
-              {features.map((item) => {
+              {features.slice(0, 4).map((item) => {
                 return (
                   <div key={item.id} className={styles.col}>
                     <div className={styles.wrapper}>
