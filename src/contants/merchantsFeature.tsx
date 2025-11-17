@@ -1,43 +1,31 @@
-import { FaCreditCard, FaGift } from "react-icons/fa";
+import { FaShieldAlt } from "react-icons/fa";
+import { FiGlobe } from "react-icons/fi";
 import { GoGraph } from "react-icons/go";
-import { IoIosFlash, IoMdPhonePortrait } from "react-icons/io";
-import { MdOutlineQrCodeScanner } from "react-icons/md";
+import { IoIosFlash } from "react-icons/io";
 
 export const mfeatures = [
   {
     id: 1,
     icon: <IoIosFlash />,
     title: "Instant Settlements",
-    des: "Receive funds directly in your linked bank or MFS account within minutes",
+    des: "Withdraw earnings instantly to your bank, wallet, or card.",
   },
   {
     id: 2,
-    icon: <FaCreditCard />,
-    title: "All Payment Methods",
-    des: "Accept bKash, Nagad, Rocket, Cards, and Bank Transfers seamlessly",
+    icon: <FiGlobe />,
+    title: "Global Payment Acceptance",
+    des: "Accept payments from 100+ countries in multiple currencies.",
   },
   {
     id: 3,
     icon: <GoGraph />,
-    title: "Smart Dashboard",
-    des: "Track sales, transactions, and customer data in real-time analytics",
+    title: "Real-Time Analytics",
+    des: "Track transactions, revenue, and customer behavior effortlessly.",
   },
   {
     id: 4,
-    icon: <MdOutlineQrCodeScanner />,
-    title: "QR & Payment Links",
-    des: "Collect payments easily with personalized QR codes or shareable links",
-  },
-  {
-    id: 5,
-    icon: <FaGift />,
-    title: "Cashback & Rewards",
-    des: "Get merchant incentives and loyalty bonuses on each transaction",
-  },
-  {
-    id: 6,
-    icon: <IoMdPhonePortrait />,
-    title: "Simple Merchant App",
-    des: "Manage payments, refunds, and analytics from your phone anywhere",
+    icon: <FaShieldAlt />,
+    title: "Enterprise Security",
+    des: "PCI DSS compliant, fraud protected, and globally trusted.",
   },
 ];

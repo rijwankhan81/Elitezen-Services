@@ -351,3 +351,117 @@
         }
     }
 }
+
+.api {
+    position: relative;
+
+    .wrap {
+        padding: 50px 0;
+        position: relative;
+        z-index: 1;
+
+
+
+        @media(max-width:$sm) {
+            padding: 30px 0;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+
+            @media(max-width:$md) {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .image {
+                padding: 50px;
+                position: relative;
+
+                @media(max-width:$sm) {
+                    padding: 20px;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    z-index: 1;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+
+        .content {
+
+            h2 {
+                font-size: 48px;
+                font-weight: 700;
+
+                line-height: 1.1;
+
+                @media(max-width:$lg) {
+                    font-size: 38px;
+                }
+
+                @media(max-width:$sm) {
+                    font-size: 28px;
+                }
+
+                span {
+                    color: $primary;
+                }
+            }
+
+            .desc {
+                color: $color_five;
+                margin: 20px 0;
+
+                @media(max-width:$md) {
+                    margin: 10px 0;
+                }
+            }
+
+            .btns {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+
+                @media(max-width:$md) {
+                    justify-content: center;
+                }
+
+                a {
+                    font-size: 18px;
+                    color: #fff;
+                    padding: 18px 32px;
+                    border-radius: 15px;
+                    box-shadow: 0 0 30px 0 #5315b644;
+                    text-decoration: none;
+                    font-weight: 500;
+
+                    @media(max-width:$lg) {
+                        font-size: 16px;
+                        padding: 14px 24px;
+                        border-radius: 10px;
+                    }
+                }
+
+                .download {
+                    background: linear-gradient(300deg, $primary, $color_three);
+                }
+
+                .merchant {
+                    background: #000;
+                }
+            }
+
+
+        }
+    }
+}

@@ -450,77 +450,86 @@
     }
 }
 
-.security {
-    padding: 80px 0;
+.worldwide {
+    position: relative;
     background: $color_six;
 
-    @media(max-width:$xl) {
-        padding: 60px 0;
-    }
-
-    @media(max-width:$lg) {
+    .wrap {
         padding: 50px 0;
-    }
+        position: relative;
+        z-index: 1;
 
-    @media(max-width:$md) {
-        padding: 40px 0;
-    }
 
-    @media(max-width:$sm) {
-        padding: 30px 0;
-    }
 
-    .row {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 24px;
+        @media(max-width:$sm) {
+            padding: 30px 0;
+        }
 
-        .col {
-            padding: 33px;
-            background: #fff;
-            border-radius: 16px;
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
 
-            @media(max-width:$sm) {
+            @media(max-width:$md) {
+                grid-template-columns: 1fr;
+                gap: 30px;
                 text-align: center;
-                padding: 25px;
             }
 
-            .icon {
-                background: linear-gradient(300deg, $primary, $color_three);
-                border-radius: 16px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 64px;
-                height: 64px;
-                color: #fff;
-                font-size: 24px;
-                box-shadow: 0 0 30px 0 #5315b644;
+            .image {
+                padding: 50px;
+                position: relative;
 
                 @media(max-width:$sm) {
-                    border-radius: 10px;
-                    width: 50px;
-                    height: 50px;
-                    font-size: 20px;
-                    margin: auto;
+                    padding: 20px;
+                }
+
+
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    z-index: 1;
+                    border-radius: 20px;
                 }
             }
+        }
 
-            h3 {
-                margin: 18px 0;
-                font-size: 24px;
+
+        .content {
+
+            h2 {
+                font-size: 48px;
                 font-weight: 700;
 
+                line-height: 1.1;
+
+                @media(max-width:$lg) {
+                    font-size: 38px;
+                }
+
                 @media(max-width:$sm) {
-                    margin: 14px 0;
-                    font-size: 20px;
+                    font-size: 28px;
+                }
+
+                span {
+                    color: $primary;
                 }
             }
 
-            p {
+            .desc {
                 color: $color_five;
-                margin: 0;
+                margin: 20px 0;
+
+                @media(max-width:$md) {
+                    margin: 10px 0;
+                }
             }
+
+
+
         }
     }
 }

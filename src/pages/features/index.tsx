@@ -25,12 +25,11 @@ export default function Features() {
             <Container>
               <div className={styles.row}>
                 <div className={styles.content}>
-                  <p className={styles.title}>Smart Bangladesh </p>
-                  <h1>Fast, Secure & Payments Rewarding</h1>
+                  <p className={styles.title}>Global </p>
+                  <h1>Everything You Need — Inside One Powerful Wallet</h1>
                   <p className={styles.desc}>
-                    Send money, pay bills, and accept digital payments
-                    seamlessly with PeddyPay — your gateway to a Smart
-                    Bangladesh.
+                    A global financial platform designed for speed, security,
+                    and smart money management.
                   </p>
                 </div>
                 <div className={styles.image}>
@@ -43,10 +42,10 @@ export default function Features() {
         <section className={styles.features}>
           <Container>
             <div className={styles.head}>
-              <h2>Powerful Features for Modern Bangladesh</h2>
+              <h2>Powerful Features</h2>
               <p>
                 Experience the next generation of digital payments with
-                cutting-edge technology and local integration
+                cutting-edge technology
               </p>
             </div>
             <div className={styles.row}>
@@ -183,29 +182,7 @@ export default function Features() {
             </Container>
           </div>
         </section>
-        <section className={styles.security}>
-          <Container>
-            <div className={styles.head}>
-              <h2>Bank-Grade Security</h2>
-              <p>
-                Your money and data are protected with industry-leading security
-              </p>
-            </div>
-            <div className={styles.row}>
-              {security.map((item) => {
-                return (
-                  <div key={item.id} className={styles.col}>
-                    <div className={styles.wrapper}>
-                      <div className={styles.icon}>{item.icon}</div>
-                      <h3>{item.title}</h3>
-                      <p>{item.des}</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </Container>
-        </section>
+
         <Getapp />
       </main>
       <Footer />

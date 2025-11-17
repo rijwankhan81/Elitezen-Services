@@ -21,47 +21,47 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Rahim Ahmed",
-    role: "Small Business Owner",
+    name: "Daniel Carter",
+    role: "Freelance Designer, UK",
     image: "/images/user.svg",
     review:
-      "PeddyPay has transformed how I run my business. I can now accept payments easily and my customers love the convenience. The real-time sales tracking is a game-changer!",
+      "PeddyPay makes receiving international payments so much easier. The transfers are fast, fees are low, and I finally get paid on time without the usual complications.",
     rating: 5,
   },
   {
     id: 2,
-    name: "Nusrat Jahan",
-    role: "University Student",
+    name: "Aisha Khan",
+    role: "Travel Enthusiast, UAE",
     image: "/images/user.svg",
     review:
-      "PeddyPay made my life easier, I pay bills in seconds! No more standing in long queues for utilities. I also love how easy it is to split costs with friends.",
-    rating: 4.5,
-  },
-  {
-    id: 3,
-    name: "Kamal Hossain",
-    role: "Online Shop Owner",
-    image: "/images/user.svg",
-    review:
-      "Integrating PeddyPay with my e-commerce store was simple and quick. My sales increased by 30% as customers prefer the smooth checkout experience!",
-    rating: 4,
-  },
-  {
-    id: 4,
-    name: "Shamima Akter",
-    role: "Freelancer",
-    image: "/images/user.svg",
-    review:
-      "As a freelancer, PeddyPay helps me receive international payments quickly and securely. I no longer worry about delays, and it gives me more time to focus on my work.",
+      "I love how simple it is to manage different currencies in one place. PeddyPay helped me avoid conversion hassles during my recent trip—just tap and pay!",
     rating: 5,
   },
   {
-    id: 5,
-    name: "Hasan Chowdhury",
-    role: "Restaurant Owner",
+    id: 3,
+    name: "Jonathan Miller",
+    role: "E-Commerce Store Owner, USA",
     image: "/images/user.svg",
     review:
-      "PeddyPay has made managing my restaurant much easier. Customers pay through QR codes and I track all transactions in real-time. It’s reliable and super convenient.",
+      "Integrating PeddyPay into my store was straightforward. Customers appreciate the smooth checkout, and my international sales have noticeably increased.",
+    rating: 4.5,
+  },
+  {
+    id: 4,
+    name: "Sofia Rodriguez",
+    role: "Student, Spain",
+    image: "/images/user.svg",
+    review:
+      "Sending money to friends or paying online has never felt this easy. The app is clean, fast, and reliable. I also love the smart spending insights!",
+    rating: 4,
+  },
+  {
+    id: 5,
+    name: "Arjun Mehta",
+    role: "Restaurant Owner, India",
+    image: "/images/user.svg",
+    review:
+      "We switched to PeddyPay for accepting digital payments, and it’s been fantastic. QR payments are smooth, and the real-time analytics help me track daily income effortlessly.",
     rating: 4.5,
   },
 ];

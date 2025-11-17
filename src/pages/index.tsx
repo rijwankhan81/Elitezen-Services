@@ -5,12 +5,11 @@ import Footer from "@/layout/footer";
 import { Container } from "react-bootstrap";
 import NextImage from "@/hooks/NextImage";
 import { FaCheckCircle, FaDownload } from "react-icons/fa";
-import { FaShop } from "react-icons/fa6";
 import { features } from "@/contants/features";
 import { works } from "@/contants/howitsworks";
-import { security } from "@/contants/security";
 import Testimonials from "@/components/testimonials";
 import Getapp from "@/components/getApp";
+import { MdSwitchAccount } from "react-icons/md";
 
 export default function Home() {
   return (
@@ -25,21 +24,20 @@ export default function Home() {
             <Container>
               <div className={styles.row}>
                 <div className={styles.content}>
-                  <h1>Simplifying Digital Payments for Everyone</h1>
+                  <h1>Your Global Wallet. Fast, Secure, Rewarding.</h1>
                   <p className={styles.desc}>
-                    Fast, secure, and rewarding — powered by PeddyPay.
-                    Experience seamless transactions with instant payments and
-                    exclusive cashback rewards.
+                    Send, receive, and spend money worldwide in seconds — with
+                    one smart digital wallet.
                   </p>
                   <div className={styles.btns}>
                     <a href="" className={styles.download}>
                       <FaDownload /> Download App
                     </a>
                     <a href="" className={styles.merchant}>
-                      <FaShop /> Become a Merchant
+                      <MdSwitchAccount /> Create Your Wallet
                     </a>
                   </div>
-                  <div className={styles.stats}>
+                  {/* <div className={styles.stats}>
                     <div className={styles.col}>
                       <h3>10M+</h3>
                       <p>Active Users</p>
@@ -52,7 +50,7 @@ export default function Home() {
                       <h3>₹50Cr+</h3>
                       <p>Daily Transactions</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className={styles.image}>
                   <NextImage src={"/images/hmBanner.png"} alt={""} />
@@ -148,29 +146,25 @@ export default function Home() {
             </Container>
           </div>
         </section>
-        <section className={styles.security}>
-          <Container>
-            <div className={styles.head}>
-              <h2>Bank-Grade Security</h2>
-              <p>
-                Your money and data are protected with industry-leading security
-              </p>
-            </div>
-            <div className={styles.row}>
-              {security.map((item) => {
-                return (
-                  <div key={item.id} className={styles.col}>
-                    <div className={styles.wrapper}>
-                      <div className={styles.icon}>{item.icon}</div>
-                      <h3>{item.title}</h3>
-                      <p>{item.des}</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </Container>
+        <section className={styles.worldwide}>
+          <div className={styles.wrap}>
+            <Container>
+              <div className={styles.row}>
+                <div className={styles.image}>
+                  <NextImage src={"/images/globe.png"} alt={""} />
+                </div>
+                <div className={styles.content}>
+                  <h2>Trusted Worldwide</h2>
+                  <p className={styles.desc}>
+                    PeddyPay supports 100+ countries and 30+ currencies —
+                    including USD, EUR, GBP, INR, AED, BDT, and more.
+                  </p>
+                </div>
+              </div>
+            </Container>
+          </div>
         </section>
+
         <Testimonials />
         <Getapp />
       </main>

@@ -4,11 +4,12 @@ import Header from "@/layout/header";
 import Footer from "@/layout/footer";
 import { Container } from "react-bootstrap";
 import NextImage from "@/hooks/NextImage";
-import { FaCheckCircle, FaDownload } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
 import { FaShop } from "react-icons/fa6";
 import Getapp from "@/components/getApp";
 import { mfeatures } from "@/contants/merchantsFeature";
 import { becomeMerchant } from "@/contants/becomeMerchant";
+import { TbApi } from "react-icons/tb";
 
 export default function Merchants() {
   return (
@@ -23,18 +24,18 @@ export default function Merchants() {
             <Container>
               <div className={styles.row}>
                 <div className={styles.content}>
-                  <h1>Accept Digital Payments Easily — Anytime, Anywhere</h1>
+                  <h1>Accept Payments From Anywhere in the World</h1>
                   <p className={styles.desc}>
-                    Join thousands of Bangladeshi businesses using PeddyPay to
-                    accept payments, grow sales, and manage their money
-                    seamlessly.
+                    Empower your business with global reach, instant
+                    settlements, and powerful merchant tools.
                   </p>
                   <div className={styles.btns}>
                     <a href="" className={styles.merchant}>
-                      <FaShop /> Start Accepting Payments
+                      <FaShop /> Become a Merchant
                     </a>
                     <a href="" className={styles.download}>
-                      <FaDownload /> Download Merchant App
+                      <TbApi />
+                      Explore API
                     </a>
                   </div>
                   <div className={styles.merchants}>
@@ -52,12 +53,12 @@ export default function Merchants() {
                 </div>
                 <div className={styles.image}>
                   <NextImage src={"/images/merchantsbanner.jpg"} alt={""} />
-                  <div className={styles.payment}>
+                  {/* <div className={styles.payment}>
                     <h5>
                       <FaCheckCircle /> Payment Received
                     </h5>
                     <h6>৳ 2,450</h6>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </Container>
@@ -108,7 +109,30 @@ export default function Merchants() {
             </div>
           </Container>
         </section>
+        <section className={styles.api}>
+          <div className={styles.wrap}>
+            <Container>
+              <div className={styles.row}>
+                <div className={styles.content}>
+                  <h2>API & Developer Tools</h2>
+                  <p className={styles.desc}>
+                    Simple REST APIs, global payment processing, webhook alerts,
+                    and scalable infrastructure for any platform.
+                  </p>
 
+                  <div className={styles.btns}>
+                    <a href="" className={styles.download}>
+                      View API Docs
+                    </a>
+                  </div>
+                </div>
+                <div className={styles.image}>
+                  <NextImage src={"/images/api.jpg"} alt={""} />
+                </div>
+              </div>
+            </Container>
+          </div>
+        </section>
         <Getapp />
       </main>
       <Footer />
