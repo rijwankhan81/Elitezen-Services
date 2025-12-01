@@ -3,6 +3,6 @@ export const navItems = [
   { label: "Features", href: "/features" },
   { label: "Merchants", href: "/merchants" },
   { label: "Security", href: "/security" },
-  { label: "Support", href: "/Support" },
-  { label: "Download App", href: "/Download App" },
+  { label: "Support", href: "/support" },
+  { label: "Download App", href: "/download-app" },
 ];
