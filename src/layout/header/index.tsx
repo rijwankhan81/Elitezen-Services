@@ -68,7 +68,7 @@ export default function Header() {
               </ul>
               <div className={styles.btns}>
                 <div className={styles.btn}>
-                  <a href="">Get Started</a>
+                  <a href="/download-app">Get Started</a>
                 </div>
                 <div className={styles.hamMenu} onClick={toggleClass}>
                   <GiHamburgerMenu />
