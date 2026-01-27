@@ -3,7 +3,6 @@ import styles from "./blog.module.scss";
 import Header from "@/layout/header";
 import Footer from "@/layout/footer";
 import { Container } from "react-bootstrap";
-import Getapp from "@/components/getApp";
 import Testimonials from "@/components/testimonials";
 import BlogCard from "@/components/blogs";
 import { blogPosts as postsFromFile, BlogPost } from "@/contants/blogs";
@@ -66,8 +65,6 @@ export default function BlogPage({ posts }: Props) {
         </section>
 
         <Testimonials />
-
-        <Getapp />
       </main>
       <Footer />
     </>
