@@ -1,5 +1,5 @@
-@import '../../styles/common';
-@import '../../styles/var';
+@use '../../styles/common' as *;
+@use '../../styles/var' as *;
 
 .testimonials {
     padding: 70px 0;
