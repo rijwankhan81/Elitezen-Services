@@ -31,7 +31,7 @@ export default function Header() {
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
           rel="stylesheet"
         />
       </Head>
@@ -41,7 +41,7 @@ export default function Header() {
             <div className={styles.nav}>
               <div className={styles.logo}>
                 <Link className={styles.navLink} href="/">
-                  <NextImage src={"/images/logo.svg"} alt={""} />
+                  <NextImage src={"/images/logo.png"} alt={""} />
                 </Link>
               </div>
               <ul className={`${show ? styles.show : ""} ${styles.menu}`}>
@@ -68,7 +68,14 @@ export default function Header() {
               </ul>
               <div className={styles.btns}>
                 <div className={styles.btn}>
-                  <a href="/download-app">Get Started</a>
+                  <a className={styles.Contact} href="">
+                    +971 50 123 4567
+                  </a>
+                </div>
+                <div className={styles.btn}>
+                  <a className={styles.Appointment} href="/book">
+                    Book Appointment
+                  </a>
                 </div>
                 <div className={styles.hamMenu} onClick={toggleClass}>
                   <GiHamburgerMenu />

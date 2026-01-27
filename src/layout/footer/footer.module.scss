@@ -5,7 +5,7 @@
 .footer {
     padding-top: 80px;
     color: #fff;
-    background-color: #000;
+    background: linear-gradient(300deg, $primary, $color_three);
     position: relative;
 
 
@@ -15,11 +15,11 @@
 
     .wrapper {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
         justify-content: space-between;
-        gap: 40px;
+        gap: 30px;
 
-        @media (max-width: $md) {
+        @media (max-width: $lg) {
             grid-template-columns: 1fr 1fr;
         }
 
@@ -29,14 +29,10 @@
         }
 
         h3 {
-            font-size: 22px;
-            margin-bottom: 26px;
+            font-size: 18px;
+            margin-bottom: 20px;
             color: #fff;
 
-            @media (max-width: $xxl) {
-                font-size: 20px;
-                margin-bottom: 20px;
-            }
 
             @media (max-width: $sm) {
                 text-align: center;
@@ -66,22 +62,26 @@
                 text-align: left;
                 margin-bottom: 20px;
 
+
                 @media (max-width: $sm) {
                     text-align: center;
                 }
 
                 img {
-                    width: 160px;
+                    width: 200px;
                     height: auto;
+                    background: #ffffff;
+                    padding: 10px;
+                    border-radius: 8px;
 
                     @media(max-width:$md) {
-                        width: 110px;
+                        width: 160px;
                     }
                 }
             }
 
             p {
-                color: #9CA3AF;
+                color: #DEE3FB;
 
                 @media (max-width: $sm) {
                     text-align: center;
@@ -98,7 +98,7 @@
         .footer_menu {
             @media (max-width: $md) {
                 width: 100%;
-                border-bottom: 2px solid grey;
+                border-bottom: 2px solid #DEE3FB;
                 padding-bottom: 30px;
             }
 
@@ -106,21 +106,39 @@
                 list-style: none;
                 padding: 0;
                 margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                @media (max-width: $sm) {
+
+                    align-items: center;
+                }
 
                 li {
-                    padding: 7px 0;
+                    display: flex;
+                    gap: 8px;
 
                     @media (max-width: $sm) {
                         text-align: center;
                     }
 
+                    svg {
+                        margin-top: 4px;
+                    }
 
                     a {
                         text-decoration: none;
-                        color: #9CA3AF;
+                        color: #DEE3FB;
                         font-size: 16px;
                         font-weight: 400;
 
+                    }
+
+                    span {
+                        color: #DEE3FB;
+                        font-size: 16px;
+                        font-weight: 400;
                     }
 
                     .active {
@@ -130,30 +148,7 @@
             }
         }
 
-        .contactInfo {
-            ul {
-                list-style: none;
 
-                li {
-                    padding: 7px 0;
-                    display: flex;
-                    gap: 10px;
-
-                    .icon {
-                        color: #9CA3AF;
-                    }
-
-                    span {
-                        color: #9CA3AF;
-                    }
-
-                    a {
-                        color: #9CA3AF;
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
 
         .connect {
             ul {
@@ -220,7 +215,7 @@
         .copyright {
             font-size: 18px;
             font-weight: 400;
-            color: #9CA3AF;
+            color: #DEE3FB;
 
             @media (max-width: $md) {
                 font-size: 16px;
@@ -274,7 +269,7 @@
 
         a {
             text-decoration: none;
-            color: #9CA3AF;
+            color: #DEE3FB;
 
             &:hover {
                 color: $primary;

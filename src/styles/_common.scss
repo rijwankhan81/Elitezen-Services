@@ -18,22 +18,35 @@
         padding-bottom: 20px;
     }
 
+    .title {
+        padding: 7px 14px;
+        background: #CED6FF;
+        color: $primary;
+        width: fit-content;
+        border-radius: 40px;
+        margin: auto;
+
+        svg {
+            color: $primary;
+            font-size: 18px;
+            margin-right: 5px;
+        }
+    }
+
     h2 {
-        font-size: 48px;
-        font-weight: 700;
-        margin-bottom: 0px;
+        font-size: 36px;
+        font-weight: 800;
+        margin: 10px 0;
         line-height: 1.1;
 
-        @media(max-width:$lg) {
-            font-size: 38px;
-        }
+
 
         @media(max-width:$sm) {
             font-size: 28px;
         }
     }
 
-    p {
+    .desc {
         font-size: 20px;
         color: $color_five;
         margin: 0;

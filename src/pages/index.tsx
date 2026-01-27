@@ -4,18 +4,28 @@ import Header from "@/layout/header";
 import Footer from "@/layout/footer";
 import { Container } from "react-bootstrap";
 import NextImage from "@/hooks/NextImage";
-import { FaCheckCircle, FaDownload } from "react-icons/fa";
-import { features } from "@/contants/features";
-import { works } from "@/contants/howitsworks";
-import Testimonials from "@/components/testimonials";
-import Getapp from "@/components/getApp";
-import { MdSwitchAccount } from "react-icons/md";
+import {
+  FaBriefcase,
+  FaBuilding,
+  FaCalculator,
+  FaCheckCircle,
+  FaLock,
+  FaRegCheckCircle,
+  FaShieldAlt,
+} from "react-icons/fa";
+import { FaArrowRightLong, FaFileLines } from "react-icons/fa6";
+import { IoIosStar } from "react-icons/io";
+import Stats from "@/components/stats";
+import Clients from "@/components/clients";
+import { testimonials } from "@/contants/testimonials";
+import { chooseus } from "@/contants/chooseus";
+import { SlBadge } from "react-icons/sl";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Peddy Pay</title>
+        <title>Elitezen Services</title>
       </Head>
       <Header />
       <main className={styles.main}>
@@ -24,49 +34,376 @@ export default function Home() {
             <Container>
               <div className={styles.row}>
                 <div className={styles.content}>
-                  <h1>Your Global Wallet. Fast, Secure, Rewarding.</h1>
+                  <p className={styles.title}>
+                    <IoIosStar />
+                    Trusted by 5,000+ Businesses
+                  </p>
+                  <h1>
+                    Your Trusted Partner for
+                    <span> Business Setup</span> & Regulatory Compliance
+                  </h1>
                   <p className={styles.desc}>
-                    Send, receive, and spend money worldwide in seconds — with
-                    one smart digital wallet.
+                    Expert business formation, PRO services, and compliance
+                    solutions in UAE. We handle the complexity so you can focus
+                    on growth.
                   </p>
                   <div className={styles.btns}>
-                    <a href="" className={styles.download}>
-                      <FaDownload /> Download App
+                    <a href="" className={styles.Appointment}>
+                      Book an Appointment <FaArrowRightLong />
                     </a>
-                    <a href="" className={styles.merchant}>
-                      <MdSwitchAccount /> Create Your Wallet
+                    <a href="" className={styles.Explore}>
+                      Explore Services
                     </a>
                   </div>
-                  {/* <div className={styles.stats}>
-                    <div className={styles.col}>
-                      <h3>10M+</h3>
-                      <p>Active Users</p>
+                  <div className={styles.rating}>
+                    <ul>
+                      <li>
+                        <NextImage
+                          src={"/images/Ahmed Al-Mansoori.png"}
+                          alt={""}
+                        />
+                      </li>
+                      <li>
+                        <NextImage
+                          src={"/images/David Thompson.png"}
+                          alt={""}
+                        />
+                      </li>
+                      <li>
+                        <NextImage src={"/images/Michael Chen.png"} alt={""} />
+                      </li>
+                      <li>
+                        <NextImage src={"/images/Sarah Johnson.png"} alt={""} />
+                      </li>
+                    </ul>
+                    <div className={styles.review}>
+                      <div>
+                        <ul>
+                          <li>
+                            <IoIosStar />
+                          </li>
+                          <li>
+                            <IoIosStar />
+                          </li>
+                          <li>
+                            <IoIosStar />
+                          </li>
+                          <li>
+                            <IoIosStar />
+                          </li>
+                          <li>
+                            <IoIosStar />
+                          </li>
+                        </ul>
+                        <h6>4.9/5</h6>
+                      </div>
+                      <p>from 500+ reviews</p>
                     </div>
-                    <div className={styles.col}>
-                      <h3>500K+</h3>
-                      <p>Merchants</p>
-                    </div>
-                    <div className={styles.col}>
-                      <h3>₹50Cr+</h3>
-                      <p>Daily Transactions</p>
-                    </div>
-                  </div> */}
+                  </div>
                 </div>
                 <div className={styles.image}>
-                  <NextImage src={"/images/hmBanner.png"} alt={""} />
+                  <NextImage src={"/images/hm-banner.png"} alt={""} />
+                  <div className={styles.success}>
+                    <FaRegCheckCircle />
+
+                    <div className={styles.content}>
+                      <h4>100% Success Rate</h4>
+                      <p>All applications approved</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Container>
           </div>
         </section>
-        <section className={styles.features}>
+        <Stats />
+        <Clients />
+        <section className={styles.services}>
+          <div className={styles.head}>
+            <p className={styles.title}>
+              <FaBriefcase />
+              Our Services
+            </p>
+            <h2>Comprehensive Business Solutions</h2>
+            <p className={styles.desc}>
+              End-to-end services for business setup, compliance, and growth in
+              the UAE
+            </p>
+          </div>
+          <div className={styles.wrap}>
+            <Container>
+              <div className={styles.rowWrapper}>
+                <div className={styles.row}>
+                  <div className={styles.content}>
+                    <div className={styles.icon}>
+                      <FaBuilding />
+                    </div>
+                    <h2>Company Formation & Business Setup</h2>
+                    <p className={styles.desc}>
+                      We simplify the entire company formation process in UAE,
+                      from choosing the right jurisdiction to obtaining all
+                      necessary licenses. Our experts guide you through
+                      mainland, free zone, and offshore setup options tailored
+                      to your business needs.
+                    </p>
+                    <ul>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Free zone and mainland company registration</span>
+                      </li>
+                      <li>
+                        <FaCheckCircle />
+                        <span>License procurement and renewal</span>
+                      </li>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Business plan development</span>
+                      </li>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Office space solutions</span>
+                      </li>
+                    </ul>
+                    <div className={styles.btns}>
+                      <a href="" className={styles.Appointment}>
+                        Book Appointment <FaArrowRightLong />
+                      </a>
+                    </div>
+                    <div className={styles.review}>
+                      {testimonials.slice(0, 1).map((t) => (
+                        <div className={styles.card} key={t.id}>
+                          <div className={styles.header}>
+                            <img
+                              src={t.image}
+                              alt={t.name}
+                              className={styles.avatar}
+                            />
+                            <div>
+                              <div className={styles.rating}>
+                                {"★".repeat(Math.floor(t.rating))}
+                                {t.rating % 1 !== 0 ? "☆" : ""}
+                              </div>
+                              <p>"{t.review}"</p>
+                              <h3>
+                                {t.name}, {t.company}
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className={styles.image}>
+                    <NextImage src={"/images/setup.png"} alt={""} />
+                  </div>
+                </div>
+                <div className={styles.row}>
+                  <div className={styles.content}>
+                    <div className={styles.icon}>
+                      <FaFileLines />
+                    </div>
+                    <h2>PRO Services & Government Relations</h2>
+                    <p className={styles.desc}>
+                      Navigate UAE's regulatory landscape with ease. Our PRO
+                      services handle all government-related documentation, visa
+                      processing, and compliance requirements, saving you time
+                      and ensuring accuracy.
+                    </p>
+                    <ul>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Visa applications and renewals</span>
+                      </li>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Emirates ID processing</span>
+                      </li>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Labor card and work permit services</span>
+                      </li>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Document attestation and translation</span>
+                      </li>
+                    </ul>
+                    <div className={styles.btns}>
+                      <a href="" className={styles.Appointment}>
+                        Book Appointment <FaArrowRightLong />
+                      </a>
+                    </div>
+                    <div className={styles.review}>
+                      {testimonials.slice(1, 2).map((t) => (
+                        <div className={styles.card} key={t.id}>
+                          <div className={styles.header}>
+                            <img
+                              src={t.image}
+                              alt={t.name}
+                              className={styles.avatar}
+                            />
+                            <div>
+                              <div className={styles.rating}>
+                                {"★".repeat(Math.floor(t.rating))}
+                                {t.rating % 1 !== 0 ? "☆" : ""}
+                              </div>
+                              <p>"{t.review}"</p>
+                              <h3>
+                                {t.name}, {t.company}
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className={styles.image}>
+                    <NextImage src={"/images/relations.png"} alt={""} />
+                  </div>
+                </div>
+                <div className={styles.row}>
+                  <div className={styles.content}>
+                    <div className={styles.icon}>
+                      <FaShieldAlt />
+                    </div>
+                    <h2>Regulatory Compliance & Legal Support</h2>
+                    <p className={styles.desc}>
+                      Stay compliant with UAE regulations through our
+                      comprehensive legal and compliance services. We ensure
+                      your business meets all statutory requirements and
+                      maintain good standing with authorities.
+                    </p>
+                    <ul>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Corporate compliance audits</span>
+                      </li>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Legal documentation and contracts</span>
+                      </li>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Regulatory filings and reporting</span>
+                      </li>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Risk management advisory</span>
+                      </li>
+                    </ul>
+                    <div className={styles.btns}>
+                      <a href="" className={styles.Appointment}>
+                        Book Appointment <FaArrowRightLong />
+                      </a>
+                    </div>
+                    <div className={styles.review}>
+                      {testimonials.slice(2, 3).map((t) => (
+                        <div className={styles.card} key={t.id}>
+                          <div className={styles.header}>
+                            <img
+                              src={t.image}
+                              alt={t.name}
+                              className={styles.avatar}
+                            />
+                            <div>
+                              <div className={styles.rating}>
+                                {"★".repeat(Math.floor(t.rating))}
+                                {t.rating % 1 !== 0 ? "☆" : ""}
+                              </div>
+                              <p>"{t.review}"</p>
+                              <h3>
+                                {t.name}, {t.company}
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className={styles.image}>
+                    <NextImage src={"/images/legal.png"} alt={""} />
+                  </div>
+                </div>
+                <div className={styles.row}>
+                  <div className={styles.content}>
+                    <div className={styles.icon}>
+                      <FaCalculator />
+                    </div>
+                    <h2>Accounting & Tax Services</h2>
+                    <p className={styles.desc}>
+                      Professional accounting and tax services tailored for UAE
+                      businesses. From bookkeeping to VAT compliance, we handle
+                      your financial obligations so you can focus on growth.
+                    </p>
+                    <ul>
+                      <li>
+                        <FaCheckCircle />
+                        <span>VAT registration and filing</span>
+                      </li>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Bookkeeping and financial reporting</span>
+                      </li>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Tax advisory and planning</span>
+                      </li>
+                      <li>
+                        <FaCheckCircle />
+                        <span>Financial audits and reviews</span>
+                      </li>
+                    </ul>
+                    <div className={styles.btns}>
+                      <a href="" className={styles.Appointment}>
+                        Book Appointment <FaArrowRightLong />
+                      </a>
+                    </div>
+                    <div className={styles.review}>
+                      {testimonials.slice(3, 4).map((t) => (
+                        <div className={styles.card} key={t.id}>
+                          <div className={styles.header}>
+                            <img
+                              src={t.image}
+                              alt={t.name}
+                              className={styles.avatar}
+                            />
+                            <div>
+                              <div className={styles.rating}>
+                                {"★".repeat(Math.floor(t.rating))}
+                                {t.rating % 1 !== 0 ? "☆" : ""}
+                              </div>
+                              <p>"{t.review}"</p>
+                              <h3>
+                                {t.name}, {t.company}
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className={styles.image}>
+                    <NextImage src={"/images/tax.png"} alt={""} />
+                  </div>
+                </div>
+              </div>
+            </Container>
+          </div>
+        </section>
+        <section className={styles.chooseus}>
           <Container>
             <div className={styles.head}>
-              <h2>Powerful Features</h2>
-              <p>Everything you need for seamless digital payments</p>
+              <p className={styles.title}>
+                <SlBadge />
+                Why Choose Us{" "}
+              </p>
+              <h2>Your Success is Our Priority</h2>
+              <p className={styles.desc}>
+                Experience the difference of working with UAE's most trusted
+                business services provider
+              </p>
             </div>
             <div className={styles.row}>
-              {features.slice(0, 4).map((item) => {
+              {chooseus.map((item) => {
                 return (
                   <div key={item.id} className={styles.col}>
                     <div className={styles.wrapper}>
@@ -80,93 +417,119 @@ export default function Home() {
             </div>
           </Container>
         </section>
-        <section className={styles.works}>
-          <Container>
-            <div className={styles.head}>
-              <h2>How It Works</h2>
-              <p>Get started in three simple steps</p>
-            </div>
-            <div className={styles.row}>
-              {works.map((item) => {
-                return (
-                  <div key={item.id} className={styles.col}>
-                    <div className={styles.wrapper}>
-                      <div className={styles.image}>
-                        <NextImage src={item.image} alt={item.title} />
-                      </div>
-                      <h3>{item.title}</h3>
-                      <p>{item.des}</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </Container>
-        </section>
-
-        <section className={styles.solution}>
+        <section className={styles.bookAppointment}>
           <div className={styles.wrap}>
             <Container>
               <div className={styles.row}>
                 <div className={styles.content}>
-                  <h2>Powerful Solutions for Merchants</h2>
+                  <div className={styles.icon}>
+                    <FaBuilding /> Book Your Consultation
+                  </div>
+                  <h2>Ready to Start Your Business Journey?</h2>
                   <p className={styles.desc}>
-                    Accept payments from customers seamlessly. Get real- time
-                    analytics, automated settlements, and tools to grow your
-                    business faster.
+                    Schedule a free consultation with our experts. We'll discuss
+                    your requirements, answer your questions, and create a
+                    customized plan for your business setup.
                   </p>
                   <ul>
                     <li>
                       <FaCheckCircle />
-                      <span>Zero setup fees and transparent pricing</span>
+                      <div>
+                        <h4>Free Initial Consultation</h4>
+                        <p>30-minute call with our business setup expert</p>
+                      </div>
                     </li>
                     <li>
                       <FaCheckCircle />
-                      <span>Instant settlement to your bank account</span>
+                      <div>
+                        <h4>Customized Solution</h4>
+                        <p>Tailored plan based on your specific needs</p>
+                      </div>
                     </li>
                     <li>
                       <FaCheckCircle />
-                      <span>Advanced analytics and reporting dashboard</span>
-                    </li>
-                    <li>
-                      <FaCheckCircle />
-                      <span>24/7 dedicated merchant support</span>
+                      <div>
+                        <h4>Clear Roadmap</h4>
+                        <p>Step-by-step timeline and pricing breakdown</p>
+                      </div>
                     </li>
                   </ul>
-                  <div className={styles.btns}>
-                    <a href="" className={styles.download}>
-                      Start Accepting Payments
-                    </a>
+
+                  <div className={styles.review}>
+                    {testimonials.slice(4, 5).map((t) => (
+                      <div className={styles.card} key={t.id}>
+                        <div className={styles.header}>
+                          <img
+                            src={t.image}
+                            alt={t.name}
+                            className={styles.avatar}
+                          />
+                          <div>
+                            <div className={styles.rating}>
+                              {"★".repeat(Math.floor(t.rating))}
+                              {t.rating % 1 !== 0 ? "☆" : ""}
+                            </div>
+                            <p>"{t.review}"</p>
+                            <h3>
+                              {t.name}, {t.company}
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
-                <div className={styles.image}>
-                  <NextImage src={"/images/dashboard.jpg"} alt={""} />
-                </div>
-              </div>
-            </Container>
-          </div>
-        </section>
-        <section className={styles.worldwide}>
-          <div className={styles.wrap}>
-            <Container>
-              <div className={styles.row}>
-                <div className={styles.image}>
-                  <NextImage src={"/images/globe.png"} alt={""} />
-                </div>
-                <div className={styles.content}>
-                  <h2>Trusted Worldwide</h2>
-                  <p className={styles.desc}>
-                    PeddyPay supports 100+ countries and 30+ currencies —
-                    including USD, EUR, GBP, INR, AED, BDT, and more.
-                  </p>
-                </div>
-              </div>
-            </Container>
-          </div>
-        </section>
+                <div className={styles.appointmentForm}>
+                  <h3>Schedule Your Appointment</h3>
 
-        <Testimonials />
-        <Getapp />
+                  <div className={styles.formWrapper}>
+                    <form action="" className={styles.form}>
+                      <div className={styles.field}>
+                        <label>Full Name</label>
+                        <input type="text" />
+                      </div>
+                      <div className={styles.field}>
+                        <label>Email Address</label>
+                        <input type="email" />
+                      </div>
+                      <div className={styles.field}>
+                        <label>Phone Number </label>
+                        <input type="number" />
+                      </div>
+                      <div className={styles.field}>
+                        <label>Service Interested In </label>
+                        <select name="" id="">
+                          <option value="">Select a service</option>
+                        </select>
+                      </div>
+                      <div className={styles.field}>
+                        <label>Preferred Date</label>
+                        <input type="date" />
+                      </div>
+                      <div className={styles.field}>
+                        <label>Message (Optional)</label>
+                        <textarea
+                          name=""
+                          id=""
+                          placeholder="Tell us about your requirements..."
+                        ></textarea>
+                      </div>
+                      <div className={styles.btn}>
+                        <button>Book Appointment </button>
+                      </div>
+
+                      <h6>
+                        {" "}
+                        <FaLock />
+                        Your information is secure and confidential
+                      </h6>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </Container>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

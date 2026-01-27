@@ -4,10 +4,9 @@ import Header from "@/layout/header";
 import Footer from "@/layout/footer";
 import { Container } from "react-bootstrap";
 import NextImage from "@/hooks/NextImage";
-import { FaCheckCircle } from "react-icons/fa";
 import { FaShop } from "react-icons/fa6";
 import Getapp from "@/components/getApp";
-import { mfeatures } from "@/contants/merchantsFeature";
+import { chooseus } from "@/contants/chooseus";
 import { becomeMerchant } from "@/contants/becomeMerchant";
 import { TbApi } from "react-icons/tb";
 
@@ -73,7 +72,7 @@ export default function Merchants() {
               </p>
             </div>
             <div className={styles.row}>
-              {mfeatures.map((item) => {
+              {chooseus.map((item) => {
                 return (
                   <div key={item.id} className={styles.col}>
                     <div className={styles.wrapper}>

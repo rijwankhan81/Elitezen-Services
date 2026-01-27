@@ -2,13 +2,21 @@ import { Container } from "react-bootstrap";
 import styles from "./footer.module.scss";
 import Link from "next/link";
 import { FiFacebook } from "react-icons/fi";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaClock,
+  FaEnvelope,
+  FaInstagram,
+  FaLinkedinIn,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import NextImage from "@/hooks/NextImage";
 import { usePathname } from "next/navigation";
 import { companyItems } from "@/contants/companyNav";
-import { supportItems } from "@/contants/supportNav";
+import { servicesNav } from "@/contants/servicesNav";
 import { legalItems } from "@/contants/legalNav";
+import { contactInfo } from "@/contants/contactInfo";
 export default function Footer() {
   const pathname = usePathname();
 
@@ -19,11 +27,11 @@ export default function Footer() {
           <div className={styles.wrapper}>
             <div className={styles.inner_wrapper}>
               <Link className={styles.logo} href="/">
-                <NextImage src="/images/logo-footer.svg" alt="" />
+                <NextImage src="/images/logo.png" alt="" />
               </Link>
               <p>
-                Making digital payments simple, secure, and rewarding for
-                everyone across India.
+                Your trusted partner for business setup, compliance, and growth
+                in the UAE.
               </p>
               <div className={styles.connect}>
                 <ul>
@@ -52,6 +60,27 @@ export default function Footer() {
               </div>
             </div>
             <div className={styles.footer_menu}>
+              <h3>Services</h3>
+              <ul>
+                {servicesNav.map((item) => {
+                  const isActive = pathname === item.href;
+
+                  return (
+                    <li key={item.href} className={styles.navItem}>
+                      <Link
+                        href={item.href}
+                        className={`${styles.nav_link} ${
+                          isActive ? styles.active : ""
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div className={styles.footer_menu}>
               <h3>Company</h3>
               <ul>
                 {companyItems.map((item) => {
@@ -72,27 +101,7 @@ export default function Footer() {
                 })}
               </ul>
             </div>
-            <div className={styles.footer_menu}>
-              <h3>Support</h3>
-              <ul>
-                {supportItems.map((item) => {
-                  const isActive = pathname === item.href;
 
-                  return (
-                    <li key={item.href} className={styles.navItem}>
-                      <Link
-                        href={item.href}
-                        className={`${styles.nav_link} ${
-                          isActive ? styles.active : ""
-                        }`}
-                      >
-                        {item.label}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
             <div className={styles.footer_menu}>
               <h3>Legal</h3>
               <ul>
@@ -114,10 +123,35 @@ export default function Footer() {
                 })}
               </ul>
             </div>
+            <div className={styles.footer_menu}>
+              <h3>Contact Information</h3>
+
+              <ul>
+                <li>
+                  <FaPhoneAlt />
+                  <span>{contactInfo.phone}</span>
+                </li>
+
+                <li>
+                  <FaEnvelope />
+                  <span>{contactInfo.email}</span>
+                </li>
+
+                <li>
+                  <FaMapMarkerAlt />
+                  <span>{contactInfo.address}</span>
+                </li>
+                <li>
+                  <FaClock />
+
+                  <span>{contactInfo.timing}</span>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className={styles.footer_bootom}>
             <p className={styles.copyright}>
-              © 2025 PeddyPay. All rights reserved.
+              © 2026 Elitezen Services. All rights reserved.
             </p>
             <p className={styles.copyright}>Powered by JIONEX</p>
           </div>
