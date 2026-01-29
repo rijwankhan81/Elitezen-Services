@@ -1,6 +1,6 @@
 export const navItems = [
   { label: "Services", href: "/s" },
   { label: "About Us", href: "/about" },
-  { label: "Why Choose Us", href: "/s" },
+  { label: "Compliance Audit", href: "/compliance-audit" },
   { label: "Contact", href: "/s" },
 ];
