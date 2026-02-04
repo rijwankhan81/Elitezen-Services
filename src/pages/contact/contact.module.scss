@@ -1,0 +1,215 @@
+@use "../../styles/var" as *;
+@use "../../styles/common" as *;
+
+
+
+.banner {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(300deg, $color_six, #FFFFFF, $color_six);
+
+    }
+
+    .wrap {
+        padding: 100px 0;
+        position: relative;
+        z-index: 1;
+
+        @media(max-width:$lg) {
+            padding: 70px 0;
+        }
+
+        @media(max-width:$sm) {
+            padding: 50px 0;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+
+        .content {
+            text-align: center;
+            max-width: 1000px;
+            margin: auto;
+
+            h1 {
+                font-size: 48px;
+                font-weight: 800;
+                line-height: 60px;
+
+                @media(max-width:$lg) {
+                    font-size: 40px;
+                    line-height: 45px;
+                }
+
+                @media(max-width:$sm) {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+
+                span {
+                    color: $primary;
+                }
+            }
+
+            .desc {
+                color: $color_five;
+                margin: 10px 0;
+            }
+
+        }
+
+        .btns {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+            a {
+                font-size: 18px;
+                color: #fff;
+                padding: 18px 32px;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 500;
+
+                @media(max-width:$lg) {
+                    font-size: 16px;
+                    padding: 14px 24px;
+                    border-radius: 10px;
+                }
+            }
+
+            .Appointment {
+                background: linear-gradient(300deg, $primary, $color_three);
+            }
+
+            .Explore {
+                color: #000000;
+                background: #ffffff;
+                border: 1px solid #D1D5DB;
+            }
+        }
+    }
+}
+
+.contactInfo {
+    padding: 70px 0;
+
+
+    @media(max-width:$xl) {
+        padding: 60px 0;
+    }
+
+    @media(max-width:$lg) {
+        padding: 50px 0;
+    }
+
+    @media(max-width:$md) {
+        padding: 40px 0;
+    }
+
+    @media(max-width:$sm) {
+        padding: 30px 0;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 24px;
+
+        .col {
+            padding: 33px;
+            border-radius: 16px;
+            background: #FFFFFF;
+            border: 1px solid #F3F4F6;
+
+            @media(max-width:$sm) {
+                text-align: center;
+                padding: 25px;
+            }
+
+            .icon {
+                background: $color_six;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 56px;
+                height: 56px;
+                color: $primary;
+                font-size: 24px;
+
+                @media(max-width:$sm) {
+                    border-radius: 10px;
+                    width: 50px;
+                    height: 50px;
+                    font-size: 20px;
+                    margin: auto;
+                }
+            }
+
+            h3 {
+                margin: 18px 0;
+                font-size: 20px;
+                font-weight: 700;
+
+                @media(max-width:$sm) {
+                    margin: 14px 0;
+                    font-size: 18px;
+                }
+            }
+
+            p {
+                color: $color_five;
+                margin: 0;
+
+                a {
+                    color: $color_five;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}
+
+.map {
+    background: linear-gradient(300deg, $color_six, #FFFFFF, $color_six);
+    padding: 70px 0;
+
+
+    @media(max-width:$xl) {
+        padding: 60px 0;
+    }
+
+    @media(max-width:$lg) {
+        padding: 50px 0;
+    }
+
+    @media(max-width:$md) {
+        padding: 40px 0;
+    }
+
+    @media(max-width:$sm) {
+        padding: 30px 0;
+    }
+
+    .wrap {
+        iframe {
+            width: 100%;
+            aspect-ratio: 2/1;
+            border-radius: 12px;
+        }
+    }
+}
