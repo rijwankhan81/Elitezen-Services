@@ -1,0 +1,196 @@
+@use "../../styles/var" as *;
+@use "../../styles/common" as *;
+
+
+
+.banner {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(300deg, $color_six, #FFFFFF, $color_six);
+
+    }
+
+    .wrap {
+        padding: 60px 0;
+        position: relative;
+        z-index: 1;
+
+
+
+        @media(max-width:$sm) {
+            padding: 50px 0;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+
+        .content {
+            text-align: center;
+            max-width: 1000px;
+            margin: auto;
+
+            h1 {
+                font-size: 48px;
+                font-weight: 800;
+                line-height: 60px;
+
+                @media(max-width:$lg) {
+                    font-size: 40px;
+                    line-height: 45px;
+                }
+
+                @media(max-width:$sm) {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+
+                span {
+                    color: $primary;
+                }
+            }
+
+            .desc {
+                color: $color_five;
+                margin: 10px 0;
+            }
+
+        }
+
+
+    }
+}
+
+.services {
+    padding: 40px 0;
+
+
+    @media(max-width:$sm) {
+        padding: 30px 0;
+    }
+
+    .servicesWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        padding: 24px;
+        background: linear-gradient(300deg, $primary, $color_three);
+        border-radius: 16px;
+
+        @media(max-width:$lg) {
+            grid-template-columns: 1fr;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+                font-size: 18px;
+                font-weight: 600;
+                color: #ffffff;
+                margin-bottom: 16px;
+                padding: 0 14px;
+            }
+
+            .list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    position: relative;
+                    margin-bottom: 4px;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        color: #dee3fb;
+                        font-size: 14px;
+                        text-decoration: none;
+                        padding: 10px 14px;
+                        border-radius: 10px;
+                        transition: background 0.2s ease;
+
+                        &:hover {
+                            background: rgba(255, 255, 255, 0.15);
+                        }
+                    }
+                }
+
+                .children>a::after {
+                    content: "▾";
+                    font-size: 12px;
+                    margin-left: 8px;
+                }
+
+                .children:hover .submenu {
+                    max-height: 500px; // enough to fit content
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+
+                .submenu {
+                    list-style: none;
+                    margin: 8px 0 0 0;
+                    padding: 0 8px;
+                    position: absolute;
+                    top: 40px;
+                    left: 0;
+                    width: 100%;
+                    background: $color_three;
+                    border-radius: 10px;
+                    z-index: 2;
+                    max-height: 0;
+                    opacity: 0;
+                    overflow: hidden;
+                    transform: translateY(-6px);
+                    transition:
+                        max-height 0.35s ease,
+                        opacity 0.25s ease,
+                        transform 0.25s ease;
+
+                    @media(max-width:$lg) {
+                        display: block;
+                        opacity: 1;
+                        position: relative;
+                        top: 0;
+                        max-height: fit-content;
+                    }
+
+                    li {
+                        margin: 6px 0;
+
+                        a {
+                            font-size: 13px;
+                            padding: 8px 12px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

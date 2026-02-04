@@ -1,7 +1,5 @@
 export const servicesNav = [
-  { label: "Company Formation", href: "/Company Formation" },
-  { label: "PRO Services", href: "/PRO Services" },
-  { label: "Regulatory Compliance", href: "/Regulatory Compliance" },
-  { label: "Accounting & Tax", href: "/Legal Support" },
-  { label: "Legal Support", href: "/Legal Support" },
+  { label: "Business Setup in UAE", href: "/services" },
+  { label: "Product Registration", href: "/services" },
+  { label: "Business Support", href: "/services" },
 ];
