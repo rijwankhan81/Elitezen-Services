@@ -37,7 +37,11 @@ export default function Services() {
             <div className={styles.servicesWrapper}>
               {servicesData.map((category) => (
                 <div key={category.slug} className={styles.col}>
-                  <h4>{category.category}</h4>
+                  <h4>
+                    <Link href={`/services/${category.slug}`}>
+                      {category.category}
+                    </Link>
+                  </h4>
 
                   <ul className={styles.list}>
                     {category.services.map((service) => (
