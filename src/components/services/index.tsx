@@ -1,5 +1,4 @@
 import styles from "./services.module.scss";
-import { Container } from "react-bootstrap";
 import { servicesData } from "@/contants/services";
 import Link from "next/link";
 
