@@ -2,13 +2,13 @@
 
 export interface ServiceNode {
   title: string;
-  slug: string;
+  slug?: string; // optional
   children?: ServiceNode[];
 }
 
 export interface ServiceCategory {
   category: string;
-  slug: string;
+  slug?: string; // optional also if needed
   services: ServiceNode[];
 }
 
@@ -19,7 +19,6 @@ export const servicesData: ServiceCategory[] = [
     services: [
       {
         title: "Mainland Company",
-        slug: "mainland-company",
         children: [
           {
             title: "LLC Company Formation in Dubai",
@@ -27,7 +26,7 @@ export const servicesData: ServiceCategory[] = [
           },
           {
             title: "Mainland Company Formation in Dubai",
-            slug: "professional-license",
+            slug: "mainland-company-formation",
           },
         ],
       },
