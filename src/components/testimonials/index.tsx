@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 import styles from "./slider.module.scss";
 import { Container } from "react-bootstrap";
-import { testimonials } from "@/contants/testimonials";
+import { testimonials } from "@/constants/testimonials";
 
 const Testimonials: FC = () => {
   return (

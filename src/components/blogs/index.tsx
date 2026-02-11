@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../../pages/blogs/blog.module.scss";
-import { BlogPost } from "@/contants/blogs";
+import { BlogPost } from "@/constants/blogs";
 
 type Props = {
   post: BlogPost;

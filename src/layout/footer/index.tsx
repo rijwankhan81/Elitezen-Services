@@ -13,10 +13,10 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 import NextImage from "@/hooks/NextImage";
 import { usePathname } from "next/navigation";
-import { companyItems } from "@/contants/companyNav";
-import { servicesNav } from "@/contants/servicesNav";
-import { legalItems } from "@/contants/legalNav";
-import { contactInfo } from "@/contants/contactInfo";
+import { companyItems } from "@/constants/companyNav";
+import { servicesNav } from "@/constants/servicesNav";
+import { legalItems } from "@/constants/legalNav";
+import { contactInfo } from "@/constants/contactInfo";
 export default function Footer() {
   const pathname = usePathname();
 

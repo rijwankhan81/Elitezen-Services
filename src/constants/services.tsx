@@ -32,23 +32,23 @@ export const servicesData: ServiceCategory[] = [
       },
       {
         title: "Free Zone Company Formation",
-        slug: "free-zone-company-formation",
+
         children: [
           {
             title: "Meydan Free Zone",
-            slug: "llc-company-formation",
+            slug: "meydan-free-zone",
           },
           {
             title: "IFZA Free Zone – Dubai Silicon Oasis",
-            slug: "professional-license",
+            slug: "ifza-free-zone",
           },
           {
             title: "Ajman Free Zone",
-            slug: "professional-license",
+            slug: "ajman-free-zone",
           },
           {
             title: "Ajman Media City Free Zone",
-            slug: "professional-license",
+            slug: "ajman-media-city-free-zone",
           },
           {
             title: "Hamriyah Free Zone",
@@ -124,7 +124,7 @@ export const servicesData: ServiceCategory[] = [
       },
       {
         title: "PRO Services in Dubai",
-        slug: "pro-services-dubai",
+
         children: [
           {
             title: "Family Visa Services in Dubai",

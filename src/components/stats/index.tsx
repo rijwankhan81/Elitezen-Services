@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import styles from "./stats.module.scss";
-import { stats } from "@/contants/stats";
+import { stats } from "@/constants/stats";
 
 export default function Stats() {
   return (

@@ -16,8 +16,8 @@ import { FaArrowRightLong, FaFileLines } from "react-icons/fa6";
 import { IoIosStar } from "react-icons/io";
 import Stats from "@/components/stats";
 import Clients from "@/components/clients";
-import { testimonials } from "@/contants/testimonials";
-import { chooseus } from "@/contants/chooseus";
+import { testimonials } from "@/constants/testimonials";
+import { chooseus } from "@/constants/chooseus";
 import { SlBadge } from "react-icons/sl";
 import Appointment from "@/components/appointment";
 

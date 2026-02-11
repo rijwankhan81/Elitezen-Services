@@ -5,7 +5,7 @@ import Footer from "@/layout/footer";
 import { Container } from "react-bootstrap";
 import Testimonials from "@/components/testimonials";
 import BlogCard from "@/components/blogs";
-import { blogPosts as postsFromFile, BlogPost } from "@/contants/blogs";
+import { blogPosts as postsFromFile, BlogPost } from "@/constants/blogs";
 import { GetStaticProps } from "next";
 
 function formatDateISOToReadable(isoDate: string) {

@@ -1,5 +1,5 @@
 import styles from "./services.module.scss";
-import { servicesData } from "@/contants/services";
+import { servicesData } from "@/constants/services";
 import Link from "next/link";
 
 export default function Servicesnav() {

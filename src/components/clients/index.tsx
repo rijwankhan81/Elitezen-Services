@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import styles from "./clients.module.scss";
 import NextImage from "@/hooks/NextImage";
-import { clients } from "@/contants/clients";
+import { clients } from "@/constants/clients";
 import { FaHandshake } from "react-icons/fa";
 
 export default function Clients() {

@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import styles from "./appointment.module.scss";
 import { FaBuilding, FaCheckCircle, FaLock } from "react-icons/fa";
-import { testimonials } from "@/contants/testimonials";
+import { testimonials } from "@/constants/testimonials";
 
 export default function Appointment() {
   return (

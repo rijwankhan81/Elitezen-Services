@@ -6,7 +6,7 @@ import { useState } from "react";
 import NextImage from "@/hooks/NextImage";
 import Head from "next/head";
 import { usePathname } from "next/navigation";
-import { navItems } from "@/contants/navMenu";
+import { navItems } from "@/constants/navMenu";
 export default function Header() {
   const [show, setShow] = useState(false);
   const pathname = usePathname();

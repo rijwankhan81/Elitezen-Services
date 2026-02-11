@@ -3,7 +3,7 @@ import styles from "./contact.module.scss";
 import Header from "@/layout/header";
 import Footer from "@/layout/footer";
 import { Container } from "react-bootstrap";
-import { contactInfo } from "@/contants/contactInfo";
+import { contactInfo } from "@/constants/contactInfo";
 import {
   FaPhoneAlt,
   FaEnvelope,
