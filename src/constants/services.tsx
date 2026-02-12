@@ -52,23 +52,23 @@ export const servicesData: ServiceCategory[] = [
           },
           {
             title: "Hamriyah Free Zone",
-            slug: "professional-license",
+            slug: "hamriyah-free-zone",
           },
           {
             title: "JAFZA Free Zone",
-            slug: "professional-license",
+            slug: "jafza-free-zone",
           },
           {
             title: "RAKEZ Free Zone",
-            slug: "professional-license",
+            slug: "rakez-free-zone",
           },
           {
             title: "Sharjah Media City Free Zone",
-            slug: "professional-license",
+            slug: "sharjah-media-city-free-zone",
           },
           {
             title: "Umm Al Quwain Free Trade Zone",
-            slug: "professional-license",
+            slug: "uaq-free-trade-zone",
           },
         ],
       },

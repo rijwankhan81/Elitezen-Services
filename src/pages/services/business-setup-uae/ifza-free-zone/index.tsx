@@ -34,7 +34,7 @@ export default function Services() {
                   their presence in the UAE quickly and efficiently.
                 </p>
                 <p>
-                  Elegant Services is an Authorized Service Partner of the
+                  Elitezen Services is an Authorized Service Partner of the
                   International Free Zone Authority. As Dubai-based business
                   setup consultants with over 12 years of experience, we have
                   successfully assisted clients across various industries and
