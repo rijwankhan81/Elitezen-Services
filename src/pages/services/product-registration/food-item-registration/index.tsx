@@ -21,7 +21,7 @@ export default function Services() {
                 <h1>A Definitive Guide</h1>
                 <h2>Food Item Registration in Dubai</h2>
                 <p>
-                  Elegant Services simplifies the food product registration
+                  Elitezen Services simplifies the food product registration
                   process by providing expert guidance and ensuring full
                   compliance with Dubai Municipality regulations. Our
                   experienced team helps businesses register their food products
@@ -119,7 +119,7 @@ export default function Services() {
                   <li>Country of origin</li>
                   <li>Instructions for use (if required)</li>
                 </ul>
-                <h2>How Elegant Services Can Assist You</h2>
+                <h2>How Elitezen Services Can Assist You</h2>
                 <p>
                   Our experienced product registration team provides complete
                   assistance with food product registration and label assessment
@@ -136,7 +136,7 @@ export default function Services() {
                   <div className={styles.col}>
                     <h3>Expertise & Knowledge</h3>
                     <p>
-                      With over 14 years of experience, Elegant Services has
+                      With over 14 years of experience, Elitezen Services has
                       extensive expertise in food product registration and
                       regulatory compliance in the UAE.
                     </p>
