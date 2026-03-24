@@ -24,7 +24,7 @@ export default function Services() {
                   <h1>Document Translation Services in Dubai</h1>
 
                   <p>
-                    At Elegant Services, we provide reliable and professional
+                    At Elitezen Services, we provide reliable and professional
                     document translation services in Dubai. Conveniently located
                     near Fish Roundabout, Deira, we work with certified legal
                     translators to deliver accurate, high-quality translations
@@ -92,7 +92,7 @@ export default function Services() {
                 </section>
 
                 <section>
-                  <h2>Why Choose Elegant Services?</h2>
+                  <h2>Why Choose Elitezen Services?</h2>
 
                   <ul>
                     <li>
@@ -117,7 +117,7 @@ export default function Services() {
                   <p>
                     We are trusted by businesses and individuals alike for
                     delivering accurate, timely, and affordable translation
-                    services. At Elegant Services, quality and customer
+                    services. At Elitezen Services, quality and customer
                     satisfaction are always our top priorities.
                   </p>
                 </section>
