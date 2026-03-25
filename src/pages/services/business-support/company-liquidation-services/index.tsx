@@ -10,7 +10,7 @@ export default function Services() {
   return (
     <>
       <Head>
-        <title>Tax Residency Certificate in the UAE | Elitezen Services</title>
+        <title>Company Liquidation Services in Dubai | Elitezen Services</title>
       </Head>
       <Header />
       <main className={styles.main}>
