@@ -128,11 +128,11 @@ export const servicesData: ServiceCategory[] = [
         children: [
           {
             title: "Family Visa Services in Dubai",
-            slug: "llc-company-formation",
+            slug: "family-visa-services-in-dubai",
           },
           {
             title: "Employment Visa Services",
-            slug: "professional-license",
+            slug: "employeement-visa-services",
           },
         ],
       },
