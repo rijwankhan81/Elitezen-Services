@@ -28,7 +28,7 @@ export default function BlogPage({ posts }: Props) {
   return (
     <>
       <Head>
-        <title>Blogs | Peddy Pay</title>
+        <title>Blogs | Elitezen Services</title>
       </Head>
       <Header />
       <main className={styles.main}>
@@ -37,12 +37,11 @@ export default function BlogPage({ posts }: Props) {
             <Container>
               <div className={styles.row}>
                 <div className={styles.content}>
-                  <h1>
-                    Explore the Latest Insights, Tips & Updates from PeddyPay
-                  </h1>
+                  <h1>Insights & Guides for Doing Business in the UAE</h1>
                   <p className={styles.desc}>
-                    Stay updated with global fintech trends, product releases,
-                    security tips, and smart financial guidance.
+                    Explore expert articles, step-by-step guides, and industry
+                    insights on company formation, visas, product registration,
+                    and market entry strategies in the UAE.
                   </p>
                 </div>
               </div>

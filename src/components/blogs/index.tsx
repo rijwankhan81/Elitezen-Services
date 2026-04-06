@@ -32,7 +32,7 @@ export default function BlogCard({ post }: Props) {
       </Link>
 
       <div className={styles.cardBody}>
-        <span className={styles.category}>{post.category}</span>
+        {/* <span className={styles.category}>{post.category}</span> */}
         <h3 className={styles.title}>
           <Link href={`/blog/${post.slug}`}>{post.title}</Link>
         </h3>

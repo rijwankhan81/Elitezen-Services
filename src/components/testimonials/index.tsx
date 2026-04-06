@@ -15,8 +15,7 @@ const Testimonials: FC = () => {
     <section className={styles.testimonials}>
       <Container>
         <div className={styles.head}>
-          <h2>What Our Users Say</h2>
-          <p>Join millions of satisfied customers</p>
+          <h2>What Our Customers Say</h2>
         </div>
         <div className={styles.sliderWrapper}>
           <Swiper
