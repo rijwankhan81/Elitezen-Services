@@ -3,12 +3,12 @@ import styles from "./footer.module.scss";
 import Link from "next/link";
 import { FiFacebook } from "react-icons/fi";
 import {
-  FaClock,
   FaEnvelope,
   FaInstagram,
   FaLinkedinIn,
   FaMapMarkerAlt,
   FaPhoneAlt,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import NextImage from "@/hooks/NextImage";
@@ -131,7 +131,11 @@ export default function Footer() {
                   <FaPhoneAlt />
                   <span>{contactInfo.phone}</span>
                 </li>
+                <li>
+                  <FaWhatsapp />
 
+                  <span>{contactInfo.whatsapp}</span>
+                </li>
                 <li>
                   <FaEnvelope />
                   <span>{contactInfo.email}</span>
@@ -140,11 +144,6 @@ export default function Footer() {
                 <li>
                   <FaMapMarkerAlt />
                   <span>{contactInfo.address}</span>
-                </li>
-                <li>
-                  <FaClock />
-
-                  <span>{contactInfo.timing}</span>
                 </li>
               </ul>
             </div>

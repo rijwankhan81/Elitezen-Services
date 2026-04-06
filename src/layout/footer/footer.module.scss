@@ -125,6 +125,8 @@
 
                     svg {
                         margin-top: 4px;
+                        width: 16px;
+
                     }
 
                     a {
@@ -139,6 +141,7 @@
                         color: #DEE3FB;
                         font-size: 16px;
                         font-weight: 400;
+                        width: fit-content;
                     }
 
                     .active {

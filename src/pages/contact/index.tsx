@@ -8,7 +8,7 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaClock,
+  FaWhatsapp,
 } from "react-icons/fa";
 import Stats from "@/components/stats";
 
@@ -61,6 +61,15 @@ export default function Contact() {
               <div className={styles.col}>
                 <div className={styles.wrapper}>
                   <div className={styles.icon}>
+                    <FaWhatsapp />
+                  </div>
+                  <h3>Message Us</h3>
+                  <p>{contactInfo.whatsapp}</p>
+                </div>
+              </div>
+              <div className={styles.col}>
+                <div className={styles.wrapper}>
+                  <div className={styles.icon}>
                     <FaEnvelope />
                   </div>
                   <h3>Email Us</h3>
@@ -80,15 +89,6 @@ export default function Contact() {
                   <p>{contactInfo.address}</p>
                 </div>
               </div>
-              <div className={styles.col}>
-                <div className={styles.wrapper}>
-                  <div className={styles.icon}>
-                    <FaClock />
-                  </div>
-                  <h3>Working Hours</h3>
-                  <p>{contactInfo.timing}</p>
-                </div>
-              </div>
             </div>
           </Container>
         </section>
@@ -102,7 +102,7 @@ export default function Contact() {
                 </p>
               </div>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14442.468972107643!2d55.261498513683364!3d25.182398842038893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682def25f457%3A0x3dd4c4097970950e!2sBusiness%20Bay%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1770184645854!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3607.992766264584!2d55.31819462605598!3d25.270828778713074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s211%2C%20Al%20Qaizi%20Building%2C%20Fish%20Roundabout%2C%20Deira%2C%20Dubai%20-%20U.A.E.!5e0!3m2!1sen!2sin!4v1775471105095!5m2!1sen!2sin"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>

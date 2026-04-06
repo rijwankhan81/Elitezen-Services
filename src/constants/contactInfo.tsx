@@ -1,13 +1,13 @@
 export type ContactInfo = {
   phone: string;
+  whatsapp: string;
   email: string;
   address: string;
-  timing?: string;
 };
 
 export const contactInfo: ContactInfo = {
-  phone: "+971 50 123 4567",
-  email: "info@elitezenservices.ae",
-  address: "Business Bay, Dubai, UAE",
-  timing: "Sun - Thu: 9AM - 6PM",
+  phone: "+00971556145850",
+  whatsapp: "+008801880620220",
+  email: "elitezensservices@gmail.com",
+  address: "211, Al Qaizi Building, Fish Roundabout, Deira, Dubai - U.A.E.",
 };

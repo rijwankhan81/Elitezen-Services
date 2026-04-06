@@ -71,7 +71,7 @@ export default function Header() {
               <div className={styles.btns}>
                 <div className={styles.btn}>
                   <a className={styles.Contact} href="">
-                    +971 50 123 4567
+                    +00971556145850
                   </a>
                 </div>
                 <div className={styles.btn}>
